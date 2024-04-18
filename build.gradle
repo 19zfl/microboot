@@ -132,3 +132,16 @@ project(":lab_excel") {
         annotationProcessor 'org.projectlombok:lombok:1.18.30'     // 注解处理
     }
 }
+project(":lab_session") {
+    dependencies{
+        implementation 'org.springframework.boot:spring-boot-starter-web'  // 依赖导入
+        compileOnly 'org.projectlombok:lombok:1.18.30'
+        annotationProcessor 'org.projectlombok:lombok:1.18.30'     // 注解处理
+        implementation 'org.springframework.session:spring-session-data-redis'
+        implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+        implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.7.18'
+        implementation group: 'redis.clients', name: 'jedis', version: '4.4.3'
+        implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+        implementation group: 'com.alibaba', name: 'fastjson', version: '2.0.33'
+    }
+}

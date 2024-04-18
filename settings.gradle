@@ -3,3 +3,5 @@ include 'microboot-common'
 include 'microboot-web'
 include 'lab_pdf'
 include 'lab_excel'
+include 'lab_session'
+
