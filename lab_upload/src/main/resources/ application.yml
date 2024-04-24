@@ -1,0 +1,8 @@
+spring:
+  servlet:
+    multipart:  # 文件上传配置
+      enabled: true  # 启用http上传
+      max-file-size: 10MB   # 设置支持的单个上传文件大小限制
+      max-request-size: 20MB  # 设置最大的请求文件大小，总体文件大小
+      file-size-threshold: 512KB  # 当上传文件达到指定阈值时，将文件内容写入磁盘
+      location: /   # 设置上传文件临时保存目录

@@ -145,3 +145,21 @@ project(":lab_session") {
         implementation group: 'com.alibaba', name: 'fastjson', version: '2.0.33'
     }
 }
+project(":lab_upload") {
+    dependencies{
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+        implementation 'com.zaxxer:HikariCP:5.1.0'
+        implementation 'com.mysql:mysql-connector-j:8.0.33' // MySQL 驱动程序
+        implementation 'cn.afterturn:easypoi-spring-boot-starter:4.4.0'
+        compileOnly 'org.projectlombok:lombok:1.18.30'
+        annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    }
+}
+project(":lab_validate") {
+    dependencies{
+        implementation 'org.springframework.boot:spring-boot-starter-web'  // 依赖导入
+        compileOnly 'org.projectlombok:lombok:1.18.30'
+        annotationProcessor 'org.projectlombok:lombok:1.18.30'     // 注解处理
+    }
+}

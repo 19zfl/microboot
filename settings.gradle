@@ -4,4 +4,6 @@ include 'microboot-web'
 include 'lab_pdf'
 include 'lab_excel'
 include 'lab_session'
+include 'lab_upload'
+include 'lab_validate'
 
